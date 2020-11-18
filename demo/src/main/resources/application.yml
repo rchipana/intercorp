@@ -1,0 +1,26 @@
+server:
+  port: 5000
+spring:
+  profiles: dev
+
+  datasource:
+    url: jdbc:mysql://database-1.chb2sp4r6vfx.us-east-1.rds.amazonaws.com:3306/intercorp
+    username: admin
+    password: c4nv14_swf31
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+
+    hibernate:
+      ddl-auto:
+      naming-strategy: org.hibernate.cfg.DefaultNamingStrategy
+
+
+
+#    properties:
+#      hibernate:
+#        ejb:
+#          interceptor: pe.joedayz.api.jpa.ApiEntityInterceptorImpl
+#        jdbc:
+#          batch_size: 20
